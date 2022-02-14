@@ -12,6 +12,9 @@ curl -u "swiftref.download@undp.org_106936:UNDPSWIFTRef!" --cacert C:\\curl-7.81
 --Latest Delta
 curl -u "swiftref.download@undp.org_106936:UNDPSWIFTRef!" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly/delta --header 'Content-Type: application/zip' -o LatestDelta.zip
 
+--Use the default file name from SWIFTRef
+curl -u "swiftref.download@undp.org_106936:UNDPSWIFTRef!" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly/delta --header 'Content-Type: application/zip' -OJ
+
 --For package
 --Full
 curl -u "swiftref.download@undp.org_106936:UNDPSWIFTRef!" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlusPkg/txt/monthly --header 'Content-Type: application/zip' -o BDPPkgLatest.zip
