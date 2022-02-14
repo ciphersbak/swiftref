@@ -1,0 +1,12 @@
+--Works - 14Feb2022
+For files
+--DeltaDec2022
+curl -u "swiftref.download@undp.org_106936:UNDPSWIFTRef!" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly/20211224/delta --header 'Content-Type: application/zip' -o Delta.zip
+
+--FullDec2022
+curl -u "swiftref.download@undp.org_106936:UNDPSWIFTRef!" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly/20211224/full --header 'Content-Type: application/zip' -o Full.zip
+
+--For package
+--Full
+--No need to specify the month as it will always download the most recent files
+curl -u "swiftref.download@undp.org_106936:UNDPSWIFTRef!" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlusPkg/txt/monthly --header 'Content-Type: application/zip' -o BDPPkgLatest.zip
