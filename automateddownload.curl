@@ -1,27 +1,27 @@
 --Works
 --For files
 --DeltaDec2022
-curl -u "swiftref.download@undp.org_106936:UNDPSWIFTRef!" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly/20211224/delta --header 'Content-Type: application/zip' -o Delta.zip
+curl -u "username:password" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly/20211224/delta --header 'Content-Type: application/zip' -o Delta.zip
 
 --FullDec2022
-curl -u "swiftref.download@undp.org_106936:UNDPSWIFTRef!" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly/20211224/full --header 'Content-Type: application/zip' -o Full.zip
+curl -u "username:password" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly/20211224/full --header 'Content-Type: application/zip' -o Full.zip
 
 --No need to specify full or delta and a date
-curl -u "swiftref.download@undp.org_106936:UNDPSWIFTRef!" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly --header 'Content-Type: application/zip' -o Full.zip
+curl -u "username:password" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly --header 'Content-Type: application/zip' -o Full.zip
 
 --Latest Delta
-curl -u "swiftref.download@undp.org_106936:UNDPSWIFTRef!" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly/delta --header 'Content-Type: application/zip' -o LatestDelta.zip
+curl -u "username:password" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly/delta --header 'Content-Type: application/zip' -o LatestDelta.zip
 
 --Use the default file name from SWIFTRef
 --Delta
-curl -u "swiftref.download@undp.org_106936:UNDPSWIFTRef!" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly/delta --header 'Content-Type: application/zip' -OJ
+curl -u "username:password" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly/delta --header 'Content-Type: application/zip' -OJ
 
 --Both FULL and DELTA
-curl -u "swiftref.download@undp.org_106936:UNDPSWIFTRef!" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly --header 'Content-Type: application/zip' -OJ
+curl -u "username:password" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly --header 'Content-Type: application/zip' -OJ
 
 --FULL
-curl -u "swiftref.download@undp.org_106936:UNDPSWIFTRef!" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly/full --header 'Content-Type: application/zip' -OJ
+curl -u "username:password" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly/full --header 'Content-Type: application/zip' -OJ
 
 --For package
 --Full
-curl -u "swiftref.download@undp.org_106936:UNDPSWIFTRef!" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlusPkg/txt/monthly --header 'Content-Type: application/zip' -OJ
+curl -u "username:password" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlusPkg/txt/monthly --header 'Content-Type: application/zip' -OJ
