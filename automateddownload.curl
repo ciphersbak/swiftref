@@ -27,4 +27,5 @@ curl -u "username:password" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swift
 curl -u "username:password" --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlusPkg/txt/monthly --header 'Content-Type: application/zip' -OJ
 
 --netrc
+--https://docs.databricks.com/dev-tools/api/latest/authentication.html
 curl --netrc --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlus_v3/txt/monthly/full --header 'Content-Type: application/zip' -OJ
