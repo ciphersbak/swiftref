@@ -35,3 +35,6 @@ curl --netrc --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.cha
 
 --XML Package
 curl --netrc --cacert C:\\curl-7.81.0-win64-mingw\\bin\\api.swiftrefdata.com.chain.crt -v -s -L -X GET https://api.swiftrefdata.com/filesdownload/getBankDirectoryPlusPkg/xml/monthly --header 'Content-Type: application/zip' -OJ
+
+--FA Import CSV REST API
+curl -i --netrc -v -s -L -X POST https://estm-dev5.fa.em2.oraclecloud.com/fscmRestApi/resources/11.13.18.05/setupTaskCSVImports -H 'Content-Type: application/vnd.oracle.adf.resourceitem+json' --data '{"TaskCode" : "CE_MANAGE_BANK_BRANCHES", "SetupTaskCSVImportProcess" : [{"TaskCode" : "CE_MANAGE_BANK_BRANCHES", "FileContent" : "'"$(base64 ./again_060017.zip | tr -d \\n)"'"}]}'
